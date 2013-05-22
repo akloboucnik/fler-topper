@@ -1,6 +1,10 @@
-(ns fler-topper.core)
+(ns fler-topper.core
+  (:gen-class)
+  (:require [org.httpkit.client :as http]))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+
+(defn -main [& args]
+  (prn args)
+  (let [req (http/get "http://www.fler.cz/")]
+    (prn "Status: " (:set-cookie (:headers @req)))))
+
