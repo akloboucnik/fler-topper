@@ -1,8 +1,9 @@
 (defproject fler-topper "0.1.0-SNAPSHOT"
   :description "Top Fler items randomly"
   :url "http://kloboucnik.me"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :license {:name "MIT License"
+            :url "http://opensource.org/licenses/MIT"}
   :main fler-topper.core
   :dependencies [[org.clojure/clojure "1.5.1"]
-                 [http-kit "2.1.3"]])
+                 [clj-http "0.7.8"]
+                 [enlive "1.1.5"]])
