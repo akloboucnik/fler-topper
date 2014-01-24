@@ -1,6 +1,7 @@
 (defproject fler-topper "0.1.0-SNAPSHOT"
   :description "Top Fler items randomly"
   :url "http://kloboucnik.me"
+  :min-lein-version "2.0.0"
   :license {:name "MIT License"
             :url "http://opensource.org/licenses/MIT"}
   :main fler-topper.core
